@@ -1,0 +1,107 @@
+version: 2
+updates:
+- package-ecosystem: pip
+  directory: "/backend"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  labels:
+  - dependencies
+  - python
+  ignore:
+  - dependency-name: fcm-django
+    versions:
+    - 0.3.7
+    - 0.3.8
+  - dependency-name: django-extensions
+    versions:
+    - 3.1.0
+    - 3.1.1.post1
+    - 3.1.2
+  - dependency-name: django
+    versions:
+    - 3.1.5
+    - 3.1.6
+    - 3.1.7
+  - dependency-name: djangorestframework
+    versions:
+    - 3.12.2
+  - dependency-name: django-bootstrap4
+    versions:
+    - 2.3.1
+  commit-message:
+    prefix: Crowdbotics
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  labels:
+  - dependencies
+  - javascript
+  ignore:
+  - dependency-name: react-native-calendars
+    versions:
+    - 1.1209.0
+    - 1.1210.0
+    - 1.1211.0
+    - 1.1212.0
+    - 1.1213.0
+    - 1.1214.0
+    - 1.1219.0
+    - 1.1221.0
+    - 1.1222.0
+    - 1.1231.0
+    - 1.1232.0
+    - 1.1233.0
+    - 1.1236.0
+    - 1.1237.0
+    - 1.1240.0
+    - 1.1241.0
+    - 1.1244.0
+    - 1.1245.0
+    - 1.1247.0
+    - 1.1248.0
+    - 1.1249.0
+    - 1.1250.0
+    - 1.1251.0
+    - 1.1252.0
+    - 1.1253.0
+    - 1.1254.0
+    - 1.1255.0
+    - 1.1256.0
+    - 1.1257.0
+    - 1.1258.0
+  - dependency-name: "@babel/runtime"
+    versions:
+    - 7.12.13
+    - 7.12.17
+    - 7.12.18
+    - 7.12.5
+    - 7.13.0
+    - 7.13.1
+    - 7.13.10
+    - 7.13.16
+    - 7.13.17
+    - 7.13.2
+    - 7.13.4
+    - 7.13.6
+    - 7.13.7
+    - 7.13.8
+    - 7.13.9
+  - dependency-name: metro-react-native-babel-preset
+    versions:
+    - 0.65.0
+    - 0.65.1
+    - 0.65.2
+  - dependency-name: "@fortawesome/free-solid-svg-icons"
+    versions:
+    - 5.15.2
+  - dependency-name: lodash
+    versions:
+    - 4.17.20
+  - dependency-name: "@ui-kitten/eva-icons"
+    versions:
+    - 5.0.0
+  commit-message:
+    prefix: Crowdbotics
